@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07110d" />
+  <meta name="description" content="Mohammad Jafari — Aspiring AI Engineer. Learning deeply, thinking scientifically, and creating useful technology." />
+  <title>Mohammad Jafari | Aspiring AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <canvas id="forest-canvas" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="MJ home"><img src="images/mj-logo.jpg" alt="MJ logo"><span>MJ<span class="brand-dot">.</span></span></a>
+    <div class="top-actions">
+      <label class="sr-only" for="language-select">Choose language</label>
+      <select id="language-select" aria-label="Choose language">
+        <option value="en">English</option><option value="fa">فارسی</option><option value="ar">العربية</option>
+        <option value="zh">中文</option><option value="tr">Türkçe</option><option value="ja">日本語</option>
+        <option value="fr">Français</option><option value="it">Italiano</option><option value="de">Deutsch</option>
+        <option value="ru">Русский</option><option value="hi">हिन्दी</option>
+      </select>
+      <button class="icon-button forest-toggle" id="forest-toggle" aria-label="Toggle forest effects" title="Toggle forest effects">✦</button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <nav class="floating-nav" id="floating-nav" aria-label="Main navigation">
+    <a href="#home" class="nav-link active" data-label="Home" aria-label="Home"><span>⌂</span><b>Home</b></a>
+    <a href="#about" class="nav-link" data-label="About" aria-label="About"><span>◉</span><b>About</b></a>
+    <a href="#skills" class="nav-link" data-label="Skills" aria-label="Skills"><span>⌘</span><b>Skills</b></a>
+    <a href="#projects" class="nav-link" data-label="Projects" aria-label="Projects"><span>▧</span><b>Projects</b></a>
+    <a href="#contact" class="nav-link" data-label="Contact" aria-label="Contact"><span>↗</span><b>Contact</b></a>
+  </nav>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">CURIOUS MIND · BUILDING WITH PURPOSE</span></div>
+        <p class="hero-name">Mohammad Jafari</p>
+        <h1><span data-i18n="heroPrefix">Aspiring</span> <span class="gradient-text" id="rotating-title">AI Engineer</span><span class="typing-caret">|</span></h1>
+        <p class="tagline" data-i18n="tagline">Learn. Build. Evolve.</p>
+        <p class="hero-intro" data-i18n="intro">Learning deeply, thinking scientifically, and creating useful technology.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects" data-i18n="explore">Explore my work <span>↗</span></a>
+          <a class="button button-ghost" href="#contact" data-i18n="connect">Let's connect</a>
+        </div>
+        <div class="hero-meta"><span>⌁</span><span data-i18n="meta">Driven by curiosity. Focused on useful ideas.</span></div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="orbital orbital-a"></div><div class="orbital orbital-b"></div>
+        <div class="hero-logo-frame"><img src="images/mj-logo.jpg" alt="MJ — personal brand mark"></div>
+        <div class="float-chip chip-ai"><span class="chip-dot"></span> AI / ML</div>
+        <div class="float-chip chip-code">&lt;/&gt; <span>BUILD</span></div>
+        <div class="hero-caption">NATURE × TECHNOLOGY</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span><small data-i18n="scroll">SCROLL TO EXPLORE</small></a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal"><p class="section-kicker">01 / INTRODUCTION</p><h2 data-i18n="aboutTitle">A little <em>about me</em></h2><p class="section-subtitle" data-i18n="aboutSub">Curiosity is where meaningful work begins.</p></div>
+      <div class="about-grid">
+        <div class="about-copy glass-card reveal">
+          <h3 data-i18n="hello">Hello, I'm Mohammad.</h3>
+          <p data-i18n="aboutP1">I'm an aspiring AI engineer passionate about programming, computer science, and building intelligent systems. I enjoy exploring how technology works, understanding complex ideas, and turning what I learn into practical solutions.</p>
+          <p data-i18n="aboutP2">My interests include Artificial Intelligence, Machine Learning, Deep Learning, intelligent automation, and Web Development. I'm especially interested in developing intelligent systems and AI agents that can solve meaningful problems and make technology more useful.</p>
+          <p data-i18n="aboutP3">I believe in learning through experimentation, thinking scientifically, and approaching challenges with curiosity and creativity. My journey is driven by continuous learning, problem-solving, and the desire to build something meaningful.</p>
+          <div class="about-signature">Learn. Build. Evolve.</div>
+        </div>
+        <div class="portrait-wrap reveal"><div class="portrait-glow"></div><img src="images/about-portrait.jpg" alt="Professional portrait of Mohammad Jafari"><div class="portrait-label"><span class="status-dot"></span> <span data-i18n="portraitLabel">Curious by nature</span></div></div>
+      </div>
+      <div class="facts-grid reveal">
+        <div class="fact-card"><span>◈</span><small data-i18n="factRole">ROLE</small><strong>Aspiring AI Engineer</strong></div>
+        <div class="fact-card"><span>⌘</span><small data-i18n="factLanguage">MAIN LANGUAGE</small><strong>Python</strong></div>
+        <div class="fact-card"><span>✳</span><small data-i18n="factStyle">LEARNING STYLE</small><strong>Project-Based</strong></div>
+        <div class="fact-card"><span>⌁</span><small data-i18n="factFocus">FOCUS</small><strong>AI & Technology</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading reveal"><p class="section-kicker">02 / TOOLKIT</p><h2 data-i18n="skillsTitle">Skills & <em>interests</em></h2><p class="section-subtitle" data-i18n="skillsSub">Tools I use, concepts I explore, and areas that inspire me.</p></div>
+      <div class="skills-grid">
+        <article class="skill-group glass-card reveal"><h3><span>⌘</span><span data-i18n="programming">Programming & Web</span></h3><div class="skill-list">
+          <div class="skill"><img src="assets/icons/python.svg" alt="Python logo"><span>Python</span><small>Intermediate</small></div><div class="skill"><img src="assets/icons/javascript.svg" alt="JavaScript logo"><span>JavaScript</span><small>Beginner</small></div>
+          <div class="skill"><img src="assets/icons/html5.svg" alt="HTML5 logo"><span>HTML5</span><small>Beginner</small></div><div class="skill"><img src="assets/icons/css3.svg" alt="CSS3 logo"><span>CSS3</span><small>Beginner</small></div>
+        </div></article>
+        <article class="skill-group glass-card reveal"><h3><span>⚙</span><span data-i18n="tools">Development Tools</span></h3><div class="skill-list">
+          <div class="skill"><img src="assets/icons/git.svg" alt="Git logo"><span>Git</span><small>Practical familiarity</small></div><div class="skill"><img src="assets/icons/github.svg" alt="GitHub logo"><span>GitHub</span><small>Learning</small></div>
+          <div class="skill"><b>API</b><span>REST APIs</span><small>Learning</small></div>
+        </div></article>
+        <article class="skill-group glass-card reveal"><h3><span>✧</span><span data-i18n="ai">Artificial Intelligence</span></h3><div class="skill-list">
+          <div class="skill"><b>AI</b><span>Artificial Intelligence</span><small>Learning</small></div><div class="skill"><b>ML</b><span>Machine Learning</span><small>Learning</small></div>
+        </div></article>
+        <article class="skill-group glass-card reveal"><h3><span>◎</span><span data-i18n="future">Future Focus</span></h3><div class="skill-list">
+          <div class="skill"><b>DL</b><span>Deep Learning</span><small>Planned</small></div><div class="skill"><b>Gen</b><span>Generative AI</span><small>Planned</small></div>
+          <div class="skill"><b>LLM</b><span>LLMs</span><small>Planned</small></div><div class="skill"><b>Ag</b><span>AI Agents</span><small>Future goal</small></div>
+          <div class="skill"><b>n8n</b><span>n8n</span><small>Planned</small></div><div class="skill"><b>↯</b><span>Automation</span><small>Interested</small></div>
+          <div class="skill"><b>API</b><span>API Integration</span><small>Not started</small></div>
+        </div></article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading reveal"><p class="section-kicker">03 / SELECTED WORK</p><h2 data-i18n="projectsTitle">Ideas into <em>reality</em></h2><p class="section-subtitle" data-i18n="projectsSub">A growing collection of experiments, tools, and things worth building.</p></div>
+      <div class="project-heading"><span data-i18n="featured">FEATURED PROJECTS</span><small data-i18n="githubOnly">Published work will appear here</small></div>
+      <div class="project-grid">
+        <article class="project-card project-placeholder reveal"><div class="project-visual visual-one"><span>01</span><div class="visual-symbol">⌘</div><i></i></div><div class="project-info"><span class="project-status">PROJECT SLOT</span><h3 data-i18n="projectSlot1">Your featured project</h3><p data-i18n="projectSlotDesc">A real GitHub project will be added here with its description, tech stack, and repository link.</p><div class="project-bottom"><span>GitHub repository</span><span>↗</span></div></div></article>
+        <article class="project-card project-placeholder reveal"><div class="project-visual visual-two"><span>02</span><div class="visual-symbol">✧</div><i></i></div><div class="project-info"><span class="project-status">PROJECT SLOT</span><h3 data-i18n="projectSlot2">Another project</h3><p data-i18n="projectSlotDesc">This space is reserved for another real project. No fictional projects or made-up results.</p><div class="project-bottom"><span>GitHub repository</span><span>↗</span></div></div></article>
+      </div>
+      <div class="project-heading coming-heading"><span data-i18n="coming">COMING SOON</span><small data-i18n="moreIdeas">More ideas are taking shape</small></div>
+      <div class="coming-grid"><div class="coming-card"><span>✳</span><b>Coming Soon<span>...</span></b><small>IN PROGRESS</small></div><div class="coming-card"><span>⌁</span><b>Coming Soon<span>...</span></b><small>IN PROGRESS</small></div><div class="coming-card"><span>◈</span><b>Coming Soon<span>...</span></b><small>IN PROGRESS</small></div></div>
+      <p class="project-note" data-i18n="projectNote">Featured project cards are placeholders until you provide real repository links and details.</p>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel glass-card reveal"><div class="contact-orbit"></div><p class="section-kicker">04 / SAY HELLO</p><h2 data-i18n="contactTitle">Let's create something <em>meaningful.</em></h2><p data-i18n="contactIntro">Let's connect and build something meaningful.</p>
+        <div class="contact-grid">
+          <a class="contact-card" href="https://github.com/Mohammad-Jafari-dev" target="_blank" rel="noopener noreferrer"><span>GH</span><div><b>GitHub</b><small>Explore my code</small></div><i>↗</i></a>
+          <a class="contact-card" href="https://x.com/MohammadJafdev" target="_blank" rel="noopener noreferrer"><span>𝕏</span><div><b>X</b><small>Follow my updates</small></div><i>↗</i></a>
+          <a class="contact-card" href="https://t.me/Mohammad_Jafari_dev" target="_blank" rel="noopener noreferrer"><span>➤</span><div><b>Telegram</b><small>Send a message</small></div><i>↗</i></a>
+          <a class="contact-card" href="mailto:mohammadjafari4999@gmail.com"><span>✉</span><div><b>Email</b><small>Get in touch</small></div><i>↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><a class="footer-brand" href="#home">MJ<span>.</span></a><p>Learn. Build. Evolve.</p><small>© <span id="year"></span> Mohammad Jafari. <span data-i18n="rights">All rights reserved.</span></small></footer>
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/languages/en.js"></script>
+  <script src="assets/js/languages/fa.js"></script>
+  <script src="assets/js/languages/ar.js"></script>
+  <script src="assets/js/languages/zh.js"></script>
+  <script src="assets/js/languages/tr.js"></script>
+  <script src="assets/js/languages/ja.js"></script>
+  <script src="assets/js/languages/fr.js"></script>
+  <script src="assets/js/languages/it.js"></script>
+  <script src="assets/js/languages/de.js"></script>
+  <script src="assets/js/languages/ru.js"></script>
+  <script src="assets/js/languages/hi.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
